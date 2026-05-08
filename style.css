@@ -35,12 +35,15 @@ body{
 
   border-bottom: 1px solid rgba(255,255,255,0.06);
 
+  backdrop-filter: blur(10px);
+
   z-index: 1000;
 }
 
 .logo{
   font-size: 1.8rem;
   font-weight: 700;
+
   color: white;
 
   letter-spacing: 1px;
@@ -49,6 +52,7 @@ body{
 .nav-links{
   display: flex;
   align-items: center;
+
   gap: 30px;
 
   list-style: none;
@@ -56,6 +60,7 @@ body{
 
 .nav-links a{
   text-decoration: none;
+
   color: #f1f5f9;
 
   font-size: 0.95rem;
@@ -72,21 +77,20 @@ body{
 
 .hero{
 
-  /* IMPORTANT SPACE BELOW NAVBAR */
-
   margin-top: 90px;
 
   min-height: calc(100vh - 90px);
 
   background-image:
   linear-gradient(
-    rgba(2,6,23,0.38),
-    rgba(2,6,23,0.38)
+    rgba(2, 6, 23, 0.72),
+    rgba(15, 23, 42, 0.55)
   ),
   url("images/travel-hero.jpg");
 
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 
   display: flex;
   justify-content: center;
@@ -94,73 +98,116 @@ body{
 
   text-align: center;
 
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
 .hero-content{
+
   max-width: 760px;
+
+  padding: 50px 40px;
+
+  border-radius: 28px;
+
+  background: rgba(15, 23, 42, 0.30);
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.22);
 
   animation: fadeIn 1s ease;
 }
 
 .hero-content h2{
-  color: #bae6fd;
 
-  font-size: 1rem;
-  font-weight: 500;
+  color: #7dd3fc;
 
-  letter-spacing: 3px;
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  letter-spacing: 4px;
   text-transform: uppercase;
 
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .hero-content h1{
+
   color: white;
 
-  font-size: 4.2rem;
+  font-size: 4.5rem;
   font-weight: 700;
 
-  line-height: 1.15;
+  line-height: 1.08;
 
-  margin-bottom: 22px;
+  margin-bottom: 26px;
 
-  text-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  letter-spacing: -2px;
+
+  text-shadow:
+    0 8px 24px rgba(0,0,0,0.4);
 }
 
 .hero-content p{
-  color: #e2e8f0;
+
+  color: #dbeafe;
 
   font-size: 1.08rem;
 
-  max-width: 650px;
+  max-width: 620px;
+
   margin: auto;
 
-  margin-bottom: 35px;
+  margin-bottom: 40px;
+
+  line-height: 1.9;
+
+  opacity: 0.95;
 }
 
 .hero-content button{
-  padding: 14px 32px;
+
+  padding: 15px 40px;
 
   border: none;
   border-radius: 50px;
 
-  background: #2563eb;
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+  );
 
   color: white;
 
   font-size: 1rem;
   font-weight: 600;
 
+  letter-spacing: 0.5px;
+
   cursor: pointer;
 
-  transition: 0.3s ease;
+  box-shadow:
+    0 10px 30px rgba(37,99,235,0.35);
+
+  transition: all 0.3s ease;
 }
 
 .hero-content button:hover{
-  background: #1d4ed8;
 
-  transform: translateY(-3px);
+  transform: translateY(-5px) scale(1.02);
+
+  box-shadow:
+    0 14px 34px rgba(37,99,235,0.45);
+
+  background: linear-gradient(
+    135deg,
+    #1d4ed8,
+    #1e40af
+  );
 }
 
 /* FEATURES SECTION */
@@ -189,11 +236,13 @@ body{
   box-shadow:
     0 4px 18px rgba(15,23,42,0.04);
 
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .feature-card:hover{
   transform: translateY(-6px);
+
+  border-color: #bfdbfe;
 
   box-shadow:
     0 12px 24px rgba(37,99,235,0.08);
@@ -206,6 +255,12 @@ body{
 
   font-size: 1.15rem;
   font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.feature-card:hover h3{
+  color: #1d4ed8;
 }
 
 .feature-card p{
@@ -242,6 +297,7 @@ footer{
 
   display: flex;
   justify-content: center;
+
   gap: 18px;
 }
 
@@ -289,7 +345,7 @@ footer{
   }
 
   .hero-content h1{
-    font-size: 3.4rem;
+    font-size: 3.5rem;
   }
 
 }
@@ -310,6 +366,8 @@ footer{
     flex-wrap: wrap;
 
     justify-content: center;
+
+    text-align: center;
   }
 
   .hero{
@@ -319,8 +377,14 @@ footer{
     min-height: calc(100vh - 120px);
   }
 
+  .hero-content{
+    padding: 40px 24px;
+  }
+
   .hero-content h1{
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+
+    line-height: 1.2;
   }
 
   .hero-content p{
@@ -337,8 +401,14 @@ footer{
 
 @media(max-width: 480px){
 
+  .hero-content{
+    padding: 32px 20px;
+  }
+
   .hero-content h1{
-    font-size: 2rem;
+    font-size: 2.2rem;
+
+    line-height: 1.25;
   }
 
   .hero-content h2{
@@ -347,8 +417,17 @@ footer{
 
   .hero-content button{
     width: 100%;
+
+    padding: 14px 0;
   }
 
+}
+
+/* TEXT SELECTION */
+
+::selection{
+  background: #2563eb;
+  color: white;
 }
 
 /* ANIMATION */

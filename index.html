@@ -1,230 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- META -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Plavel - Intelligent Travel Planning Platform</title>
-
+  <!-- SEO -->
+  <meta name="description" content="Plan smarter trips with Plavel. Build personalized itineraries, organize travel plans, and manage your budget with AI-powered assistance.">  
+  <title>Plavel • Smart Travel Planner</title>
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- FONT AWESOME ICONS -->
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- GOOGLE FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector("#menu-toggle");
+    const links = document.querySelectorAll(".nav-links a");
+    links.forEach(function(link) {
+      link.addEventListener("click", function() {
+        toggle.checked = false;
+      });
+    });
+  });
+</script>
 <body>
-
-  <!-- HEADER / NAVBAR -->
-
+  <!-- SKIP LINK -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- =========================
+       NAVBAR
+  ========================== -->
   <header class="navbar">
-
-    <div class="logo">
-      ✈️ Plavel
-    </div>
-
-    <nav>
+    <!-- LOGO -->
+    <a href="#home" class="brand-logo">
+      <span class="brand-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 12L22 4L14 22L11 13L2 12Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="brand-text">Plavel</span>
+    </a>
+    <!-- NAVIGATION -->
+    <nav aria-label="Primary navigation">
+      <!-- TOGGLE -->
+      <input type="checkbox" id="menu-toggle">
+      <!-- MENU BUTTON -->
+      <label for="menu-toggle" class="menu-btn" aria-label="Toggle navigation menu">
+        <span></span>
+      </label>
+      <!-- MOBILE OVERLAY -->
+      <label for="menu-toggle" class="nav-overlay" aria-hidden="true"></label>
+      <!-- NAV LINKS -->
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Destinations</a></li>
-        <li><a href="#">Contact</a></li>
+        <li>
+          <label for="menu-toggle">
+            <a href="#home">Home</a>
+          </label>
+        </li>
+        <li>
+          <label for="menu-toggle">
+            <a href="#features">Features</a>
+          </label>
+        </li>
+        <li>
+          <label for="menu-toggle">
+            <a href="#footer">Contact</a>
+          </label>
+        </li>
       </ul>
     </nav>
-
   </header>
-
-  <!-- HERO SECTION -->
-
-  <section class="hero">
-
-    <div class="hero-content">
-
-      <h2>AI-Powered Travel Planning</h2>
-
-      <h1>Plan Your Perfect Escape.</h1>
-
-      <p>
-        Discover smarter travel experiences with personalized itineraries,
-        budgeting tools, and seamless trip organization.
-      </p>
-
-      <button>Start Planning</button>
-
-    </div>
-
-  </section>
-
-<!-- FEATURES SECTION -->
-
-<section class="features-section">
-
-  <div class="section-heading">
-
-    <h2>Why Travelers Choose Plavel</h2>
-
-    <p>
-      Everything you need to organize smarter,
-      faster, and stress-free adventures.
-    </p>
-
-  </div>
-
-  <section class="features">
-
-    <div class="feature-card">
-
-  <span class="badge">Most Popular</span>
-
-  <div class="feature-icon">
-    ✈️
-  </div>
-
-  <h3>Smart Itinerary Builder</h3>
-
-  <p>
-    Generate personalized travel schedules with optimized routes,
-    activity suggestions, and seamless daily planning.
-  </p>
-
-  <a href="javascript:void(0)">Explore Feature →</a>
-
-</div>
-
-<div class="feature-card">
-
-  <div class="feature-icon">
-    💸
-  </div>
-
-  <h3>Budget & Expense Tracker</h3>
-
-  <p>
-    Track expenses, manage budgets, and plan cost-efficient trips
-    without losing control of your spending.
-  </p>
-
-  <a href="javascript:void(0)">Explore Feature →</a>
-
-</div>
-
-    <div class="feature-card">
-
-  <div class="feature-icon">
-    🌍
-  </div>
-
-  <h3>Destination Recommendations</h3>
-
-  <p>
-    Discover trending destinations and hidden gems tailored
-    to your travel preferences and interests.
-  </p>
-
-  <a href="javascript:void(0)">Explore Feature →</a>
-
-</div>
-
-    <div class="feature-card">
-
-  <div class="feature-icon">
-    📂
-  </div>
-
-  <h3>All-in-One Trip Organizer</h3>
-
-  <p>
-    Store bookings, hotel details, tickets, and travel schedules
-    securely in one organized place.
-  </p>
-
-  <a href="javascript:void(0)">Explore Feature →</a>
-
-</div>
-  </section>
-
-</section>
-
- <!-- FOOTER -->
-
-<footer>
-
-  <div class="footer-container">
-
-    <!-- BRAND SECTION -->
-
-    <div class="footer-brand">
-
-      <h2>✈️ Plavel</h2>
-
-      <p>
-        Smart AI-powered travel planning designed to help you
-        explore the world with confidence, convenience, and style.
-      </p>
-
-    </div>
-
-    <!-- QUICK LINKS -->
-
-    <div class="footer-links">
-
-      <h3>Quick Links</h3>
-
-      <a href="#">Home</a>
-      <a href="#">Features</a>
-      <a href="#">Destinations</a>
-      <a href="#">Contact</a>
-
-    </div>
-
-    <!-- SOCIAL SECTION -->
-
-    <div class="footer-social">
-
-      <h3>Connect With Us</h3>
-
-      <div class="social-icons">
-
-        <a href="javascript:void(0)">
-          <i class="fab fa-instagram"></i>
-        </a>
-
-        <a href="javascript:void(0)">
-          <i class="fab fa-twitter"></i>
-        </a>
-
-        <a href="javascript:void(0)">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-        <a href="javascript:void(0)">
-          <i class="fab fa-github"></i>
-        </a>
-
+  <!-- =========================
+       MAIN
+  ========================== -->
+  <main id="main" tabindex="-1">
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-tag">AI-Powered Travel Planning</span>
+        <h1>Plan Your Perfect Vacation.</h1>
+        <p>Plan smarter. Travel better. Get personalized itineraries, intelligent budgeting, and seamless trip planning - powered by AI.</p>
+        <!-- HERO BUTTONS -->
+        <div class="hero-buttons">
+          <a href="#features" class="hero-btn primary-btn">Start Planning</a>
+          <a href="#footer" class="hero-btn secondary-btn">Learn More</a>
+        </div>
       </div>
+    </section>
+    <!-- =========================
+         FEATURES SECTION
+    ========================== -->
+    <section class="features-section" id="features">
+      <!-- SECTION HEADER -->
+      <div class="section-heading">
+        <h2>Why Travellers Choose Plavel</h2>
+        <p>Great trips start with smarter planning</p>
+      </div>
+      <!-- FEATURES GRID -->
+      <div class="features">
+        <!-- FEATURE CARD -->
+        <article class="feature-card featured-card">
+          <div class="card-badge-space">
+            <span class="badge">Most Popular</span>
+          </div>
+          <div class="feature-icon">🧭</div>
+          <div class="card-content">
+            <h3>Smart Itinerary Planner</h3>
+            <p>Build personalized day-by-day travel plans with optimized routes, curated activities, and smooth scheduling.</p>
+          </div>
+          <a href="javascript:void(0)">Discover More →</a>
+        </article>
+        <!-- FEATURE CARD -->
+        <article class="feature-card">
+          <div class="card-badge-space"></div>
+          <div class="feature-icon">💰</div>
+          <div class="card-content">
+            <h3>Budget Tracker</h3>
+            <p>Plan smarter with real-time expense tracking, budget control, and cost-efficient travel planning.</p>
+          </div>
+          <a href="javascript:void(0)">Discover More →</a>
+        </article>
+        <!-- FEATURE CARD -->
+        <article class="feature-card">
+          <div class="card-badge-space"></div>
+          <div class="feature-icon">🛏️</div>
+          <div class="card-content">
+            <h3>Stay Recommendations</h3>
+            <p>Find hotels and stays tailored to your preferences, location, and travel style.</p>
+          </div>
+          <a href="javascript:void(0)">Discover More →</a>
+        </article>
+        <!-- FEATURE CARD -->
+        <article class="feature-card">
+          <div class="card-badge-space"></div>
+          <div class="feature-icon">🤖</div>
+          <div class="card-content">
+            <h3>AI Travel Assistant</h3>
+            <p>Get instant travel help, smart suggestions, and personalized planning powered by AI.</p>
+          </div>
+          <a href="javascript:void(0)">Discover More →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer id="footer">
+    <div class="footer-container">
+      <!-- BRAND -->
+      <div class="footer-brand">
+        <h2 class="brand-logo">
+          <span class="brand-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 12L22 4L14 22L11 13L2 12Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="brand-text">Plavel</span>
+        </h2>
+        <p>Smart AI travel planning for effortless trips, better experiences, and confident travel.</p>
+      </div>
+      <!-- QUICK LINKS -->
+      <div class="footer-links">
+        <h3>🔗 Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#footer">Contact</a>
+      </div>
+      <!-- SOCIAL LINKS -->
+      <div class="footer-social">
+        <h3>🌐 Connect With Us</h3>
+        <p>Stay in touch and explore updates</p>
 
+        <div class="social-icons">
+          <a href="javascript:void(0)" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="javascript:void(0)" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="javascript:void(0)" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="javascript:void(0)" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
     </div>
-
-  </div>
-
-  <!-- FOOTER BOTTOM -->
-
-  <div class="footer-bottom">
-
-    <p>
-      © 2026 Plavel. All rights reserved.
-    </p>
-
-  </div>
-
-</footer>
-
+    <!-- FOOTER BOTTOM -->
+    <div class="footer-bottom">
+      <p>© 2026 Plavel. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

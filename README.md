@@ -6,7 +6,19 @@ A responsive landing page for Plavel, the smart travel planner app.
 
 Plavel is an AI-powered travel planning tool that helps users build personalized itineraries, organize travel plans, and manage budgets efficiently. This landing page showcases the features and encourages sign-ups for the app.
 
-## Features
+## Preview
+
+![Desktop View Screenshot](images/desktop-view.png)
+![Mobile View Screenshot](images/mobile-view.png)
+
+## App Features
+
+- **Smart Itinerary Planner**: Build personalized day-by-day travel plans with optimized routes, curated activities, and smooth scheduling.
+- **Budget Tracker**: Plan smarter with real-time expense tracking, budget control, and cost-efficient travel planning.
+- **Stay Recommendations**: Find hotels and stays tailored to your preferences, location, and travel style.
+- **AI Travel Assistant**: Get instant travel help, smart suggestions, and personalized planning powered by AI.
+
+## Landing Page Features
 
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
 - **Modern UI**: Clean, intuitive interface with Font Awesome icons and Google Fonts.
@@ -25,11 +37,11 @@ Plavel is an AI-powered travel planning tool that helps users build personalized
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/plavel-landing-page.git
+   git clone https://github.com/isha-hanaan/synent-task2-landingpage-isha.git
    ```
 2. Navigate to the project directory:
    ```
-   cd plavel-landing-page
+   cd synent-task2-landingpage-isha
    ```
 3. Open `index.html` in your web browser.
 
@@ -39,14 +51,5 @@ No additional dependencies or build steps are required as this is a static site.
 
 Simply open the `index.html` file in any modern web browser to view the landing page. The page is self-contained and does not require a server.
 
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For questions or feedback, please reach out to [your email] or visit [your website].
+## Author
+Isha Hanaan

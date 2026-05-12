@@ -4,7 +4,7 @@ A responsive landing page for Plavel, the smart travel planner app.
 
 ## Description
 
-Plavel is an AI-powered travel planning tool that helps users build personalized itineraries, organize travel plans, and manage budgets efficiently. This landing page showcases the features and encourages sign-ups for the app.
+Plavel is a concept travel planning platform designed to help users build personalized itineraries, organize travel plans, and manage budgets efficiently. This landing page showcases the features and encourages sign-ups for the app.
 
 ## Preview
 
@@ -13,16 +13,16 @@ Plavel is an AI-powered travel planning tool that helps users build personalized
 
 ## App Features
 
-- **Smart Itinerary Planner**: Build personalized day-by-day travel plans with optimized routes, curated activities, and smooth scheduling.
-- **Budget Tracker**: Plan smarter with real-time expense tracking, budget control, and cost-efficient travel planning.
-- **Stay Recommendations**: Find hotels and stays tailored to your preferences, location, and travel style.
-- **AI Travel Assistant**: Get instant travel help, smart suggestions, and personalized planning powered by AI.
+- **Smart Itinerary Planner**: Showcases personalized travel planning concepts with a modern feature-based interface.
+- **Budget Tracker**: Includes a dedicated section highlighting smart travel budgeting features.
+- **Stay Recommendations**: Presents personalized stay recommendation ideas through responsive feature cards.
+- **AI Travel Assistant**: Demonstrates an AI-powered travel assistant interface design.
 
 ## Landing Page Features
 
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
 - **Modern UI**: Clean, intuitive interface with Font Awesome icons and Google Fonts.
-- **Accessibility**: Includes skip links and proper ARIA labels for better usability.
+- **Accessibility**: Accessibility-friendly features including skip links and ARIA labels.
 - **Interactive Elements**: Hamburger menu for mobile navigation.
 
 ## Technologies Used
